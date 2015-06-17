@@ -94,9 +94,9 @@ namespace GVT_Unlock
                 var token = strSource.Substring(Start, 6);
                 webBrowser1.Hide();
                 AppendTextBox("Token encontrado: " + token + "\r\n");
-                AppendTextBox("Apontando host acs.gvt.com.br para 192.168.25.2\r\n");
-                webBrowser1.Navigate("http://192.168.25.1/cgi-bin/generic.cgi?token=" + token + "&write=LANDevice_1_HostConfig_StaticHost_1_IPAddress:192.168.25.2&write=LANDevice_1_HostConfig_StaticHost_1_Hostname:acs.gvt.com.br");
-                AppendTextBox("Aguarde 5 segundos e reinicie o modem para concluir o processo.");
+                AppendTextBox("Apontando host acs.gvt.com.br para 192.168.25.200\r\n");
+                webBrowser1.Navigate("http://192.168.25.1/cgi-bin/generic.cgi?token=" + token + "&write=LANDevice_1_HostConfig_StaticHost_1_IPAddress:192.168.25.200&write=LANDevice_1_HostConfig_StaticHost_1_Hostname:acs.gvt.com.br");
+                AppendTextBox("Aguarde 5 segundos e reinicie o modem para concluir o processo.\r\n");
             }
             else
             {
